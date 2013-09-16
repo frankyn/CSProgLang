@@ -1,4 +1,5 @@
 equal([]).
+equal([Head|[]]).
 equal([Head|Tail]):- member(Head, Tail),
 					  equal(Tail).
 
